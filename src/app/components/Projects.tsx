@@ -14,37 +14,18 @@ export function Projects() {
       description: "Разработала образовательную платформу с интеграцией интерактивных карт и анимированных национальных элементов, обеспечив удобный доступ к цифровым учебникам и отчетности через модульную архитектуру на React",
       tech: ["React", "TypeScript", "Redux"],
       gradient: "from-blue-500 to-cyan-500",
+   // твоя ссылка
+      github: "#",
+      demo: "https://okuukitebi.edu.kg/",
     },
     {
       title: "Demon",
       description: "Проект представляет собой интерактивное веб-приложение на чистом JavaScript, демонстрирующее навыки работы асинхронными данными, валидацией через регулярные выражения и сложной анимацией на HTML5 Canvas.",
       tech: ["JavaScript", "HTML5", "SCSS"],
       gradient: "from-purple-500 to-pink-500",
-    // },
-    // {
-    //   title: "Task Management App",
-    //   description: "Приложение для управления задачами с drag-and-drop и коллаборацией",
-    //   tech: ["React", "TypeScript", "DND Kit", "Supabase"],
-    //   gradient: "from-green-500 to-teal-500",
-    // },
-    // {
-    //   title: "Weather Forecast App",
-    //   description: "Приложение прогноза погоды с геолокацией и красивыми анимациями",
-    //   tech: ["React", "OpenWeather API", "Motion", "Tailwind"],
-    //   gradient: "from-orange-500 to-red-500",
-    // },
-    // {
-    //   title: "Portfolio CMS",
-    //   description: "Headless CMS для создания портфолио с визуальным редактором",
-    //   tech: ["Next.js", "Prisma", "tRPC", "PostgreSQL"],
-    //   gradient: "from-indigo-500 to-purple-500",
-    // },
-    // {
-    //   title: "Chat Application",
-    //   description: "Real-time чат с видео-звонками и обменом файлами",
-    //   tech: ["React", "WebRTC", "Socket.io", "Node.js"],
-    //   gradient: "from-pink-500 to-rose-500",
-    // },
+      github: "https://github.com/1rayazh/demon.git", // твоя ссылка
+      demo: "#", // твоя ссылка
+
     }
   ];
 
@@ -121,7 +102,7 @@ export function Projects() {
                   {/* Links */}
                   <div className="flex gap-4">
                     <motion.a
-                      href="https://github.com/1rayazh/demon.git"
+                      href={project.github}
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                       className="flex items-center gap-2 text-purple-400 hover:text-purple-300"
@@ -130,7 +111,7 @@ export function Projects() {
                       <span>Code</span>
                     </motion.a>
                     <motion.a
-                      href=""
+                      href={project.demo}
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                       className="flex items-center gap-2 text-purple-400 hover:text-purple-300"

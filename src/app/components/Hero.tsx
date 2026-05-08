@@ -120,8 +120,8 @@ export function Hero() {
 
         <motion.div variants={itemVariants} className="flex justify-center gap-6">
           {[
-            { Icon: Github, href: '#' },
-            { Icon: Linkedin, href: '#' },
+            { Icon: Github, href: 'https://github.com/1rayazh' },
+            // { Icon: Linkedin, href: '#' },
             { Icon: Mail, href: '#contact' },
           ].map(({ Icon, href }, index) => (
             <motion.a

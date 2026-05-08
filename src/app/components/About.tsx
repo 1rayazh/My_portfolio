@@ -10,7 +10,7 @@ export function About() {
   const stats = [
     { icon: Code2, value: "10+", label: "Проектов" },
     { icon: Rocket, value: "1+", label: "Лет опыта" },
-    { icon: Users, value: "10+", label: "Клиентов" },
+    { icon: Users, value: "3+", label: "Клиентов" },
     { icon: Award, value: "3+", label: "Наград" },
   ];
 
